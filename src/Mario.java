@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 public class Mario {
     private float x, y;
-    private float xSpeed;
+    private double xSpeed;
     private float w, h;
 
-    public Mario(float x, float y, float w, float h, float xSpeed){
+    public Mario(float x, float y, float w, float h, double xSpeed){
         this.x = x;
         this.y = y;
         this.w = w;

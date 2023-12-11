@@ -1,0 +1,59 @@
+
+^
+java:S2184"ACast one of the operands of this addition operation to a "float".(Øˆ­¦8ÇÿÑÅ1
+^
+java:S2184"ACast one of the operands of this addition operation to a "float".(Øˆ­¦8ÇÿÑÅ1
+^
+java:S2184'"ACast one of the operands of this addition operation to a "float".(·…—ğ8ÇÿÑÅ1
+^
+java:S2184*"ACast one of the operands of this addition operation to a "float".(·…—ğ8ÇÿÑÅ1
+^
+java:S21844"ACast one of the operands of this addition operation to a "float".(·…—ğ8ÇÿÑÅ1
+^
+java:S21847"ACast one of the operands of this addition operation to a "float".(·…—ğ8ÇÿÑÅ1
+_
+java:S2184‚"ACast one of the operands of this addition operation to a "float".(®ÄËá8ÇÿÑÅ1
+_
+java:S2184…"ACast one of the operands of this addition operation to a "float".(®ÄËá8ÇÿÑÅ1
+_
+java:S2184—"ACast one of the operands of this addition operation to a "float".(î¼ì8ÇÿÑÅ1
+_
+java:S2184š"ACast one of the operands of this addition operation to a "float".(î¼ì8ÇÿÑÅ1
+N
+java:S2387","width" is the name of a field in "PApplet".(Ñ‰©·üÿÿÿÿ8ßÈÿÑÅ1
+J
+java:S2387"-"height" is the name of a field in "PApplet".(ÆìŸê8ßÈÿÑÅ1
+{
+java:S1450"YRemove the "background" field and declare it as a local variable in the relevant methods.(ò‚ÙÏşÿÿÿÿ8ºÓ’ÒÅ1
+W
+java:S1161":Add the "@Override" annotation above this method signature(„ç8äÈÿÑÅ1
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(œô«İıÿÿÿÿ8äÈÿÑÅ1
+\
+java:S1161":Add the "@Override" annotation above this method signature(œô«İıÿÿÿÿ8åÈÿÑÅ1
+J
+java:S1481"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ8æÈÿÑÅ1
+J
+java:S1481,"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ8æÈÿÑÅ1
+J
+java:S14819"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ8çÈÿÑÅ1
+W
+java:S1161A":Add the "@Override" annotation above this method signature(ÄÿÍ¤8èÈÿÑÅ1
+t
+java:S3776i"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(½æÿ ıÿÿÿÿ8ëÈÿÑÅ1
+K
+java:S1481‡"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ8íÈÿÑÅ1
+K
+java:S1481œ"(Remove this unused "sum" local variable.(©ŒºÉûÿÿÿÿ8îÈÿÑÅ1
+X
+java:S1161±":Add the "@Override" annotation above this method signature(î¸è8ğÈÿÑÅ1
+a
+java:S1854»">Remove this useless assignment to local variable "yDirection".(óÀ¥½şÿÿÿÿ8ğÈÿÑÅ1
+\
+java:S1854º">Remove this useless assignment to local variable "xDirection".(˜ÚÒ•8ğÈÿÑÅ1
+W
+java:S1161µ":Add the "@Override" annotation above this method signature(º³”8ğÈÿÑÅ1
+L
+java:S1128"/Remove this unused import 'java.awt.Rectangle'.(¾ª¸û8¾ ”ÒÅ1
+P
+java:S1068".Remove this unused "background" private field.(ò‚ÙÏşÿÿÿÿ8¾ ”ÒÅ1

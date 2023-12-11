@@ -1,4 +1,6 @@
 import processing.core.PApplet;
+import processing.core.PImage;
+
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,6 +13,7 @@ public class GameDisplay extends PApplet {
     private int width=800;
     private int height =800;
     private int round=1;
+    private PImage background;
 
     public void settings() {
         size(width, height);//Adjust the screen
@@ -25,7 +28,7 @@ public class GameDisplay extends PApplet {
             for (int i = 450; i <= 550; i+=100) {
                 carts.add(new Cart(25, i+20, 60, 60, 1,0));
             }
-            int sum = 0;
+            int sum=0;
             for (int i = 0; i < carts.size(); i++) {
                 sum += carts.get(i).getY();
             }
@@ -43,10 +46,24 @@ public class GameDisplay extends PApplet {
                 sum += carts.get(i).getY();
             }
         }
+        if(round==3){
+            mario = new Mario(25,370,60,60,1);
+            for (int i = 150; i <= 300; i+=100) {
+                carts.add(new Cart(100, i+20, 60, 60, 1,0));
+            }
+            for (int i = 450; i <= 550; i+=100) {
+                carts.add(new Cart(100, i+20, 60, 60, 1,0));
+            }
+            int sum = 0;
+            for (int i = 0; i < carts.size(); i++) {
+                sum += carts.get(i).getY();
+            }
+        }
 
     }
 
     public void draw() {
+        background = loadImage("stonewall.jpg");
         background(255); //background of screen
         fill(0, 255, 0);//Fills in the track
         rect(0, 150, width, 500);
@@ -68,7 +85,9 @@ public class GameDisplay extends PApplet {
         }
         detectCollision();
         checkEnd();
-
+        fill(0,0,0);
+        textSize(20);
+        text("Round: "+round, 10, 20);
     }
 
     public void detectCollision() {
@@ -85,13 +104,22 @@ public class GameDisplay extends PApplet {
     }
     public void checkEnd() {
         textSize(43);
-        if (mario.getX() > width - 60 && round==2) { // assuming the end is at the bottom of the screen
+        if (mario.getX() > width - 60 && round==3) { // assuming the end is at the bottom of the screen
             background(0);
             fill(0,255,0);
             textSize(100);
             text("You WIN!", 180,380);
 
             noLoop(); // stop the game
+        }
+        for (Cart cart : carts) {
+            if (cart.getX()>width-60) {
+                background(0);
+                fill(255,0,0);
+                textSize(20);
+                text("You Lose! ROUND 1? SERIOUSLY? LOSER", 170, 380);
+                noLoop(); // stop the game
+            }
         }
         if (mario.getX() > width - 60 && round==1) { // assuming the end is at the bottom of the screen
             for (int i = carts.size()-1; i >=0; i--) {
@@ -103,6 +131,27 @@ public class GameDisplay extends PApplet {
             }
             for (int i = 450; i <= 550; i+=100) {
                 carts.add(new Cart(100, i+20, 60, 60, 2,0));
+            }
+            int sum = 0;
+            for (int i = 0; i < carts.size(); i++) {
+                sum += carts.get(i).getY();
+            }
+            round++;
+
+
+        }
+
+
+        if (mario.getX() > width - 60 && round==2) { // assuming the end is at the bottom of the screen
+            for (int i = carts.size() - 1; i >= 0; i--) {
+                carts.remove(i);
+            }
+            mario = new Mario(25, 370, 60, 60, 1);
+            for (int i = 150; i <= 300; i += 100) {
+                carts.add(new Cart(100, i + 20, 30, 30, 2, 0));
+            }
+            for (int i = 450; i <= 550; i += 100) {
+                carts.add(new Cart(100, i + 20, 30, 30, 2, 0));
             }
             int sum = 0;
             for (int i = 0; i < carts.size(); i++) {
